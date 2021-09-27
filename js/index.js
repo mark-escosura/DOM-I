@@ -36,7 +36,52 @@ const siteContent = {
     "copyright" : "Copyright Great Idea! 2018"
   },
 };
-
-// Example: Update the img src for the logo
+// header selector
+const linkOne = document.createElement('a');
+const linkTwo = document.createElement('a');
+const linkThree = document.createElement('a');
+const linkFour = document.createElement('a');
+const linkFive = document.createElement('a');
+const linkSix = document.createElement('a');
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+//nav
+linkOne.textContent = 'Services';
+linkOne.href = '#';
+document.querySelector('nav').appendChild(linkOne);
+linkTwo.textContent = 'Product';
+linkTwo.href = '#';
+document.querySelector('nav').appendChild(linkTwo);
+linkThree.textContent = 'Vision';
+linkThree.href = '#';
+document.querySelector('nav').appendChild(linkThree);
+linkFour.textContent = 'Features';
+linkFour.href = '#';
+document.querySelector('nav').appendChild(linkFour);
+linkFive.textContent = 'Contact';
+linkFive.href = '#';
+document.querySelector('nav').appendChild(linkFive);
+linkSix.textContent = 'Product';
+linkSix.href = '#';
+document.querySelector('nav').appendChild(linkSix);
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// cta selector
+
+// cta
+
+// main-content selector
+
+//main-content
+
+//contact selector 
+const contactH4 = document.querySelector('.contact h4');
+const address = document.querySelector('.contact p:nth-of-type(1)');
+const phone = document.querySelector('.contact p:nth-of-type(2)');
+const email = document.querySelector('.contact p:nth-of-type(3)');
+// contact 
+contactH4.textContent = siteContent['contact']['contact-h4'];
+address.textContent = siteContent['contact']['address'];
+phone.textContent = siteContent['contact']['phone'];
+email.textContent = siteContent['contact']['email'];
+
+
